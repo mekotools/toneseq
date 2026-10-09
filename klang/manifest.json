@@ -1,0 +1,104 @@
+[
+ {
+  "ziel": "trbotkick.mp3",
+  "label": "kick",
+  "rolle": "Bass Drum",
+  "quelle": "stargate",
+  "quellpfad": "stargate-sample-pack/freesound/drums/kick/347166__dvbeats__kick-drum-1.wav",
+  "adresse": "https://raw.githubusercontent.com/stargatedaw/stargate-sample-pack/main/stargate-sample-pack/freesound/drums/kick/347166__dvbeats__kick-drum-1.wav",
+  "ziel_dauer": 0.5,
+  "herkunft": {
+   "status": "frei",
+   "lizenz": "CC0 1.0 (Gemeinfreiheit)",
+   "urheber": "dvbeats (über Stargate Sample Pack)",
+   "werk": "Stargate Sample Pack",
+   "url": "https://github.com/stargatedaw/stargate-sample-pack",
+   "vermerk": "Freesound-Aufnahme von dvbeats"
+  }
+ },
+ {
+  "ziel": "trbothh1.mp3",
+  "label": "hh1",
+  "rolle": "geschlossene Hi-Hat",
+  "quelle": "stargate",
+  "quellpfad": "stargate-sample-pack/fugue-state-audio/drums/hihats/x0xproc1-hatclsd.wav",
+  "adresse": "https://raw.githubusercontent.com/stargatedaw/stargate-sample-pack/main/stargate-sample-pack/fugue-state-audio/drums/hihats/x0xproc1-hatclsd.wav",
+  "ziel_dauer": 0.5,
+  "herkunft": {
+   "status": "frei",
+   "lizenz": "CC0 1.0 (Gemeinfreiheit)",
+   "urheber": "Stargate DAW (Teile von Freesound, Urheber im Dateinamen)",
+   "werk": "Stargate Sample Pack",
+   "url": "https://github.com/stargatedaw/stargate-sample-pack",
+   "vermerk": ""
+  }
+ },
+ {
+  "ziel": "trbothh2.mp3",
+  "label": "hh2",
+  "rolle": "offene Hi-Hat",
+  "quelle": "stargate",
+  "quellpfad": "stargate-sample-pack/fugue-state-audio/drums/hihats/x0xproc1-hatopen.wav",
+  "adresse": "https://raw.githubusercontent.com/stargatedaw/stargate-sample-pack/main/stargate-sample-pack/fugue-state-audio/drums/hihats/x0xproc1-hatopen.wav",
+  "ziel_dauer": 0.5,
+  "herkunft": {
+   "status": "frei",
+   "lizenz": "CC0 1.0 (Gemeinfreiheit)",
+   "urheber": "Stargate DAW (Teile von Freesound, Urheber im Dateinamen)",
+   "werk": "Stargate Sample Pack",
+   "url": "https://github.com/stargatedaw/stargate-sample-pack",
+   "vermerk": ""
+  }
+ },
+ {
+  "ziel": "trbotsnare.mp3",
+  "label": "snare",
+  "rolle": "Snare Drum",
+  "quelle": "vcsl",
+  "quellpfad": "Membranophones/Struck Membranophones/Legacy Snares/OldSnare/snare_ff2.wav",
+  "adresse": "https://raw.githubusercontent.com/sgossner/VCSL/master/Membranophones/Struck Membranophones/Legacy Snares/OldSnare/snare_ff2.wav",
+  "ziel_dauer": 0.5,
+  "herkunft": {
+   "status": "frei",
+   "lizenz": "CC0 1.0 (Gemeinfreiheit)",
+   "urheber": "Versilian Studios LLC und Beitragende",
+   "werk": "Versilian Community Sample Library (VCSL)",
+   "url": "https://github.com/sgossner/VCSL",
+   "vermerk": ""
+  }
+ },
+ {
+  "ziel": "trbotclap.mp3",
+  "label": "clap",
+  "rolle": "Handklatschen",
+  "quelle": "vcsl",
+  "quellpfad": "Idiophones/Struck Idiophones/Claps/Clap_rr3.wav",
+  "adresse": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Struck Idiophones/Claps/Clap_rr3.wav",
+  "ziel_dauer": 0.5,
+  "herkunft": {
+   "status": "frei",
+   "lizenz": "CC0 1.0 (Gemeinfreiheit)",
+   "urheber": "Versilian Studios LLC und Beitragende",
+   "werk": "Versilian Community Sample Library (VCSL)",
+   "url": "https://github.com/sgossner/VCSL",
+   "vermerk": ""
+  }
+ },
+ {
+  "ziel": "trbotperc.mp3",
+  "label": "perc",
+  "rolle": "Perkussion (Holzblock)",
+  "quelle": "vcsl",
+  "quellpfad": "Idiophones/Struck Idiophones/Woodblock/wood_click2_mp.wav",
+  "adresse": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Struck Idiophones/Woodblock/wood_click2_mp.wav",
+  "ziel_dauer": 0.5,
+  "herkunft": {
+   "status": "frei",
+   "lizenz": "CC0 1.0 (Gemeinfreiheit)",
+   "urheber": "Versilian Studios LLC und Beitragende",
+   "werk": "Versilian Community Sample Library (VCSL)",
+   "url": "https://github.com/sgossner/VCSL",
+   "vermerk": ""
+  }
+ }
+]

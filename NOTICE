@@ -1,0 +1,75 @@
+# Herkunft, Lizenz und Änderungen
+
+## Werk
+
+**ToneSeq** — Schritt-Sequenzer und Schlagzeug im Browser.
+Autor: **Joe Dickey**. Quelle: <https://github.com/joedickey/ToneSeq>.
+Fassung, auf die diese Auslieferung festgeschrieben ist:
+`9c70c513fa01cd828c70c9dd503974145feccadf` (02.03.2026).
+
+Lizenz des Werks: **Creative Commons Attribution-NonCommercial 4.0 International
+(CC BY-NC 4.0)** — siehe `LICENSE` im Original.
+
+Zwei Bedingungen daraus sind für unsere Fassung maßgeblich:
+
+* **Namensnennung** — der Autor und die Lizenz müssen genannt werden und ein Verweis
+  auf die Lizenz muss enthalten sein. Das geschieht in dieser Datei, im Katalog und
+  über den Hinweis auf der Seite selbst.
+* **Keine kommerzielle Nutzung** — die Auslieferung ist ein nicht-kommerzielles
+  Bildungsangebot. Wird sie je kommerziell genutzt, darf diese Fassung nicht
+  weiterverwendet werden.
+
+## Unsere Änderungen (Stand 10.10.2026)
+
+1. **Die sechs Klangdateien in `audio/` ersetzt.** Die Originaldateien
+   (`trbotkick.mp3`, `trbothh1.mp3`, `trbothh2.mp3`, `trbotsnare.mp3`,
+   `trbotclap.mp3`, `trbotperc.mp3`) trugen **keine** Herkunftsangabe: kein
+   Klangkopf mit Urheber oder Werk, im Projekt keine Nennung eines Klangpakets.
+   Die Dateien sind daher für eine Weitergabe nicht belegt. Ersetzt durch freie
+   Aufnahmen; Beleg in `klang/manifest.json` und im Klangkopf jeder Datei.
+2. **Adressangaben umgesetzt** auf `https://toneseq.mekotools.de`
+   (kanonische Adresse, Vorschaubild, Sitemap, robots.txt, strukturierte Daten).
+3. **Hinweis auf der Seite ergänzt** (Fußzeile): dass es sich um eine geänderte,
+   für MekoTools angepasste Fassung handelt.
+4. **`CNAME` entfernt** (gehörte zu GitHub Pages).
+5. **Content-Security-Policy** gesetzt, die Aufrufe fremder Server verbietet.
+
+Es wurden **keine** Funktionen entfernt oder hinzugefügt. Der Spenden- und der
+Rückmelde-Verweis des Autors in der Fußzeile bleiben stehen (beides reine
+Klickziele, keine Aufrufe fremder Server durch das Werkzeug selbst).
+
+## Die ersetzten Klänge
+
+Alle sechs sind **CC0 1.0** (Gemeinfreiheit), Format MP3 mono 44,1 kHz 192 kbit/s.
+
+* `trbotkick.mp3` — Bass Drum: *dvbeats* über das Stargate Sample Pack
+  (CC0), Datei `freesound/drums/kick/347166__dvbeats__kick-drum-1.wav`
+* `trbothh1.mp3` — geschlossene Hi-Hat: Stargate Sample Pack (CC0)
+* `trbothh2.mp3` — offene Hi-Hat: Stargate Sample Pack (CC0)
+* `trbotsnare.mp3` — Snare: Versilian Community Sample Library (CC0)
+* `trbotclap.mp3` — Handklatschen: Versilian Community Sample Library (CC0)
+* `trbotperc.mp3` — Holzblock: Versilian Community Sample Library (CC0)
+
+Vollständige Angaben (Urheber, Werk, Adresse der Quelldatei) je Datei in
+`klang/manifest.json`.
+
+## Eingebundene Programmbibliotheken (`vendor/`)
+
+Diese lagen bereits im Original bei und wurden nicht verändert:
+
+* **Tone.js** — MIT-Lizenz (im Dateikopf der Bibliothek angegeben)
+* **cytoscape.js** 3.26.0 — MIT-Lizenz (im Dateikopf angegeben)
+* **lz-string** — MIT-Lizenz laut Projekt <https://github.com/pieroxy/lz-string>
+  (im mitgelieferten Dateikopf selbst nicht angegeben)
+
+## Wenn der Autor widerspricht
+
+Diese Fassung wird auf Wunsch des Autors **unverzüglich vom Netz genommen**.
+Kontaktaufnahme über <https://github.com/joedickey/ToneSeq>.
+
+## Hinweis zur Erstellung
+
+Die Anpassung (Klangtausch, Adressen, Prüfskripte, Dokumentation) wurde
+KI-unterstützt erstellt und anschließend geprüft: die Format- und
+Vollständigkeitsprüfungen laufen beim Bauen mit und brechen bei jeder Abweichung ab
+(siehe `README.md`).

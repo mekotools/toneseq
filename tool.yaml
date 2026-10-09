@@ -1,0 +1,53 @@
+# Metadaten des MekoTools-Werkzeugs "ToneSeq".
+# Schema: schema/tool.schema.json im Katalog-Repo. Werte ohne Beleg werden
+# nicht eingetragen. Die id ist stabil und wird nie umbenannt.
+
+schema_version: 1
+
+id: mekotools-toneseq
+titel: ToneSeq
+kurzbeschreibung: 'Ein Schritt-Sequenzer mit Schlagzeug im Browser: sechzehn Schritte, ein Schlagzeug mit sechs Stimmen und eine Ton-Spur mit Klangsynthese (Welle, Hüllkurve, Filter, Hall), dazu eine Netzansicht der Muster. Ein Muster lässt sich als Link weitergeben, ohne Konto. Alles läuft im Browser, ohne Aufruf fremder Server.'
+themen: [creation]
+unterthemen: [creation/audio]
+stufe: 3
+schlagworte: [ton]
+
+laufzeit: browser
+betrieb: eigen
+reifegrad: beta
+aufwand_lehrkraft: niedrig
+
+zielgruppe: [sek1, sek2]
+geraete: [desktop, tablet]
+kamera: nein
+mikrofon: nein
+
+bildungsbezug:
+  kompetenzen:
+    - produzieren-praesentieren
+    - analysieren-reflektieren
+    - problemloesen-handeln
+  faecher: [musik, informatik]
+  lernziele:
+    - Ein Schlagzeugmuster über sechzehn Schritte setzen und im Tempo verändern
+    - Eine Tonfolge auf der Klaviatur setzen und die Klangfarbe über Welle, Hüllkurve und Filter beschreiben
+    - Ein Muster als Link weitergeben und mit einem zweiten Muster vergleichen
+
+technik:
+  artefakte:
+    - typ: image
+      referenz: ghcr.io/mekotools/toneseq:latest
+      sichtbarkeit: public
+      geprueft_am: '2026-10-10'
+  dienst_url: https://toneseq.mekotools.de
+  port: 80
+  quellcode: https://github.com/joedickey/ToneSeq
+  lizenz: CC BY-NC 4.0
+  lizenz_link: https://github.com/joedickey/ToneSeq/blob/main/LICENSE
+
+doku:
+  anleitung: docs/anleitung.md
+  didaktik: docs/didaktik.md
+  unterrichtsentwurf: docs/unterrichtsentwurf.md
+
+stand: '2026-10-10'
