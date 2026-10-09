@@ -9,6 +9,7 @@ Aufruf: klange-setzen.py <quelle> <klangverzeichnis>
 """
 import json
 import re
+import shutil
 import sys
 from pathlib import Path
 
@@ -94,10 +95,19 @@ def main():
         if p.is_file():
             t = p.read_text().replace(alt, neu)
             p.write_text(t)
-    # CNAME gehört zu GitHub Pages und hat auf unserem Server keine Bedeutung.
-    if (quelle / "CNAME").is_file():
-        (quelle / "CNAME").unlink()
-    print("Adressangaben auf toneseq.mekotools.de gesetzt, CNAME entfernt")
+    # Nicht zur Anwendung gehörende Beigaben des Originals entfernen: sie liegen sonst
+    # im Wurzelverzeichnis des Webservers und werden mit ausgeliefert. CNAME gehört zu
+    # GitHub Pages, README.md und .claude/ sind Beigaben zur Entwicklung.
+    entfernt = []
+    for beigabe in ("CNAME", "README.md", ".claude"):
+        p = quelle / beigabe
+        if p.is_dir():
+            shutil.rmtree(p)
+            entfernt.append(beigabe)
+        elif p.is_file():
+            p.unlink()
+            entfernt.append(beigabe)
+    print("Beigaben entfernt: " + (", ".join(entfernt) if entfernt else "keine"))
 
     # 6. Kennzeichnung der Änderung sichtbar in der Fußzeile
     if NOTIZ not in text:
@@ -117,6 +127,15 @@ def main():
         print("Fußzeile: MekoTools-Hinweis ergänzt")
     else:
         print("Fußzeile: Hinweis war schon vorhanden")
+
+    # 7. Gegenprobe über den ganzen Baum: keine fremde Adresse darf übrig bleiben.
+    fremde = []
+    for p in quelle.rglob("*"):
+        if p.is_file() and p.suffix.lower() in (".html", ".js", ".css", ".json", ".txt", ".xml", ".md", ".svg"):
+            if "toneseq.com" in p.read_text(errors="ignore"):
+                fremde.append(str(p.relative_to(quelle)))
+    anker(not fremde, "fremde Adresse noch in: " + ", ".join(fremde))
+    print("Gegenprobe: keine fremde Adresse im Baum")
 
 
 if __name__ == "__main__":
